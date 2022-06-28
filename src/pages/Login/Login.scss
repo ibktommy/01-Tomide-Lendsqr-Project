@@ -72,6 +72,10 @@
           opacity: .6;
           padding-left: .5rem;
         }
+        &:focus {
+          outline: none;
+          border: 1px solid rgba(84, 95, 125, 0.15);
+        }
       }
 
       .link {

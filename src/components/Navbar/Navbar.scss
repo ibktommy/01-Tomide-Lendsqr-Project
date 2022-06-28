@@ -1,0 +1,86 @@
+.navbar {
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background: #fff;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  padding: 0 3rem;
+
+  .logo {
+    width: 15rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .search-bar {
+    width: 40rem;
+    height: 4rem;
+    border: 1px solid #213F7D;
+    border-radius: 8px;
+
+    input {
+      width: 80%;
+      border: none;
+      padding-left: .5rem;
+      color: #545f7d;
+      opacity: .7;
+      font-size: 1.4rem;
+      border-radius: 8px;
+
+      &:focus::placeholder {
+        opacity: .3;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      width: 20%;
+      border: none;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      background: #39cdcc;
+
+      &:hover {
+        background: #33bbbb;
+        transition: all .2s ease-out;
+      }
+    }
+  }
+
+  .options {
+    align-items: center;
+    gap: 3rem;
+
+    .link {
+      color: #213F7D;
+      font-size: 1.6rem;
+      font-weight: 400;
+      text-decoration-line: underline;
+      cursor: pointer;
+    }
+
+    .user {
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        border-radius: 50%;
+      }
+
+      .username {
+        font-size: 1.6rem;
+        color: #213F7D;
+        font-weight: 500;
+      }
+
+      .user-options {
+        cursor: pointer;
+      }
+    }
+  }
+}
