@@ -1,10 +1,12 @@
 .navbar {
+  position: relative;
   align-items: center;
   width: 100vw;
   height: 10vh;
   background: #fff;
   box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
   padding: 0 3rem;
+  z-index: 10;
 
   .logo {
     width: 15rem;

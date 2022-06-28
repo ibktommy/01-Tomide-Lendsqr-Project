@@ -1,6 +1,6 @@
 import './App.css';
 import Login from './pages/Login/Login';
-import UsersGenDetails from './pages/Login/UsersGenDetails/UsersGenDetails';
+import UsersGenDetails from './pages/UsersGenDetails/UsersGenDetails';
 
 function App() {
   return (
