@@ -1,7 +1,7 @@
 import React from "react";
 import "./Login.scss";
-import Logo from "../../images/logo.png";
-import loginImage from "../../images/pablo-sign-in 1.png";
+import Logo from "../../images/login/logo.png";
+import loginImage from "../../images/login/pablo-sign-in 1.png";
 
 const Login = () => {
 	return (
