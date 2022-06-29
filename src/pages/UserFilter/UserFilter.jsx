@@ -17,7 +17,7 @@ const UserFilter = () => {
 						<h2 className="title-heading">Users</h2>
 					</div>
 
-					<div className="users-metric">
+					<div className="users-metric row-flex">
 						{usersMetric.map(({ id, ...props }) => {
 							return <UserMetrics key={id} {...props} />;
 						})}

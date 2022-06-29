@@ -1,8 +1,7 @@
 import React from "react";
 import "./UserMetrics.scss";
-// import image from "../../images/body-icons/png/users-xx.png";
 
-const UserMetrics = ({ image, heading, figure }) => {
+const UserMetrics = ({ image, heading, figure, DoubleUserIcon }) => {
 	return (
 		<>
 			<div className="card col-flex">
