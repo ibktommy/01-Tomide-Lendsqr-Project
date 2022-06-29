@@ -7,7 +7,7 @@ import "./UserGenDetails.scss";
 const UsersGenDetails = () => {
 	return (
 		<>
-			<section className="section section-details">
+			<section className="section section-details" id="user-gen-details">
 				<Navbar />
 				<SideBar />
 				<UserGenDetailsContent />

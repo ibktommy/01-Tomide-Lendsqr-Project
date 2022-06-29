@@ -18,12 +18,13 @@
   background: #e5e5e5;
   width: 100vw;
   min-height: 100vh;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .top-header {
   text-transform: uppercase;
   text-align: center;
+  color: #fff;
 }
 
 .title-heading {
