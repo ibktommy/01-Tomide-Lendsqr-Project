@@ -62,64 +62,69 @@ const UserGenDetailsContent = () => {
 				</div>
 
 				<div className="main-content">
-					<div className="main-content_box">
-						<h2 className="main-content_box heading-bold">
+					<div className="main-content_box col-flex">
+						<h2 className="heading-bold">
 							Personal Information
 						</h2>
-						<div className="main-content_box-details">
-							<div className="table">
-								<h3 className="main-content_box-details heading-light">
-									Full name
-								</h3>
-								<p>Grace Effiom</p>
+
+						<div className="contain row-flex">
+							<div className="main-content_box-details col-flex">
+								<div className="table">
+									<h3 className="main-content_box-details heading-light">
+										Full name
+									</h3>
+									<p className="para">Grace Effiom</p>
+								</div>
+								<div className="table">
+									<h3 className="main-content_box-details heading-light">
+										Marital Status
+									</h3>
+									<p className="para">Single</p>
+								</div>
 							</div>
-							<div className="table">
-								<h3 className="main-content_box-details heading-light">
-									Marital Status
-								</h3>
-								<p>Single</p>
+							<div className="main-content_box-details col-flex">
+								<div className="table">
+									<h3 className="main-content_box-details heading-light">
+										Phone Number
+									</h3>
+									<p className="para">07060780922</p>
+								</div>
+								<div className="table">
+									<h3 className="main-content_box-details heading-light">
+										Children
+									</h3>
+									<p className="para">None</p>
+								</div>
 							</div>
-						</div>
-						<div className="main-content_box-details">
-							<div className="table">
-								<h3 className="main-content_box-details heading-light">
-									Phone Number
-								</h3>
-								<p>07060780922</p>
+							<div className="main-content_box-details col-flex">
+								<div className="table">
+									<h3 className="main-content_box-details heading-light">
+										Email Address
+									</h3>
+									<p className="para">grace@gmail.com</p>
+								</div>
+								<div className="table">
+									<h3 className="main-content_box-details heading-light">
+										Type of residence
+									</h3>
+									<p className="para">Parent’s Apartment</p>
+								</div>
 							</div>
-							<div className="table">
-								<h3 className="main-content_box-details heading-light">
-									Children
-								</h3>
-								<p>None</p>
+							<div className="main-content_box-details col-flex">
+								<div className="table">
+									<h3 className="main-content_box-details heading-light">
+										Bvn
+									</h3>
+									<p className="para">07060780922</p>
+								</div>
 							</div>
-						</div>
-						<div className="main-content_box-details">
-							<div className="table">
-								<h3 className="main-content_box-details heading-light">
-									Email Address
-								</h3>
-								<p>grace@gmail.com</p>
-							</div>
-							<div className="table">
-								<h3 className="main-content_box-details heading-light">
-									Type of residence
-								</h3>
-								<p>Parent’s Apartment</p>
-							</div>
-						</div>
-						<div className="main-content_box-details">
-							<div className="table">
-								<h3 className="main-content_box-details heading-light">Bvn</h3>
-								<p>07060780922</p>
-							</div>
-						</div>
-						<div className="main-content_box-details">
-							<div className="table">
-								<h3 className="main-content_box-details heading-light">
-									Gender
-								</h3>
-								<p>Female</p>
+							<div className="main-content_box-details col-flex">
+								<div className="table">
+									<h3 className="main-content_box-details heading-light">
+										Gender
+									</h3>
+									<p className="para">Female</p>
+								</div>
 							</div>
 						</div>
 					</div>

@@ -43,3 +43,29 @@
 .right-dash {
   border-right: .1rem solid #545f7d;
 }
+
+.heading-bold {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #213f7d;
+  text-transform: uppercase;
+}
+
+.heading-light {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #545f7d;
+}
+
+.para {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #545f7d;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}

@@ -166,14 +166,26 @@ main {
 
   .main-content {
     margin-top: 2rem;
-    padding: 2rem 0 1rem 1rem;
+    padding: 2rem 2rem 1rem 1rem;
     background: #FFFFFF;
     border: 1px solid rgba(33, 63, 125, 0.06);
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
     border-radius: 4px;
     
+    &_box {
+      gap: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(33, 63, 125, .1);
+
+      .contain {
+        // flex-wrap: wrap;
+        align-items: flex-start;
+
+        .main-content_box-details {
+          gap: 1.5rem;
+        }
+      }
+    }
   }
-
-
   
 }
