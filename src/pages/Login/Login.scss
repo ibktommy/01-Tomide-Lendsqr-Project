@@ -217,6 +217,7 @@
 
       header {
         padding-left: 2rem;
+				margin-bottom: 1rem;
       }
 
 			.content {
@@ -226,6 +227,13 @@
 
 				& .right {
           width: 80%;
+
+					.header {
+						p {
+							font-size: 1.5rem;
+						}
+					}
+					
 					form {
 						input,
 						button {

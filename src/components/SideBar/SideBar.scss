@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   min-height: 100%;
-  padding-top: 10rem;
+  padding-top: 9rem;
   background: #e5e5e5;
   z-index: 8;
 
@@ -84,8 +84,10 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1290px) {
   .sidebar {
+    padding-top: 8rem;
+
     &-menu-item {
       &.menu {
         width: 10rem;
@@ -141,7 +143,7 @@
 @media (max-width: 1180px) {
   .sidebar {
     &-menu-item {
-      width: 22vw;
+      width: 25vw;
 
       .sidebar-content {
         &_top-options {
@@ -162,8 +164,10 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 880px) {
   .sidebar {
+    padding-top: 9.3rem;
+
     &-menu-item {
       width: 30vw;
     }
