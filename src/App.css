@@ -11,11 +11,11 @@
 .section {
   background: #e5e5e5;
   width: 100vw;
-  height: 100vh;
+  min-height: max-content;
   margin: 1rem 0;
 }
 
-.header {
+.top-header {
   text-transform: uppercase;
   text-align: center;
 }

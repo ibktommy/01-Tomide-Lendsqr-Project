@@ -26,23 +26,23 @@ const SideBar = () => {
 	return (
 		<>
 			<div className="sidebar">
-				<div className="sidebar-content">
-					<div className="sidebar-content_top-options">
-						<div className="sidebar-options">
+				<div className="sidebar-content col-flex">
+					<div className="sidebar-content_top-options col-flex">
+						<div className="sidebar-options row-flex">
 							<img src={BriefcaseIcon} alt="briefcase" />
 							<h4 className="sidebar-options-title">Switch Organization</h4>
 							<img src={DownArrowIcon} alt="downArrow" />
 						</div>
-						<div className="sidebar-options">
+						<div className="sidebar-options row-flex">
 							<img src={HomeIcon} alt="briefcase" />
 							<h4 className="sidebar-options-title">Dashboard</h4>
 						</div>
 					</div>
 
-					<div className="sidebar-content_other-options">
-						<div className="sidebar-content_other-options_box">
+					<div className="sidebar-content_other-options col-flex">
+						<div className="sidebar-content_other-options_box col-flex">
 							<h3 className="other-options-title">customers</h3>
-							<ul className="other-options-list">
+							<ul className="other-options-list col-flex">
 								<li className="sidebar-options">
 									<img src={UserFriendsIcon} alt="user-friends" />
 									<h4 className="sidebar-options-title">Users</h4>
@@ -78,9 +78,9 @@ const SideBar = () => {
 							</ul>
 						</div>
 
-						<div className="sidebar-content_other-options_box">
+						<div className="sidebar-content_other-options_box col-flex">
 							<h3 className="other-options-title">Businesses</h3>
-							<ul className="other-options-list">
+							<ul className="other-options-list col-flex">
 								<li className="sidebar-options">
 									<img src={BriefcaseIcon} alt="BriefcaseIcon" />
 									<h4 className="sidebar-options-title">organization</h4>
@@ -120,9 +120,9 @@ const SideBar = () => {
 							</ul>
 						</div>
 
-						<div className="sidebar-content_other-options_box">
+						<div className="sidebar-content_other-options_box col-flex">
 							<h3 className="other-options-title">Settings</h3>
-							<ul className="other-options-list">
+							<ul className="other-options-list col-flex">
 								<li className="sidebar-options">
 									<img src={SliderIcon} alt="SliderIcon" />
 									<h4 className="sidebar-options-title">organization</h4>

@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Login />
-      <h1 className="header">
+      <h1 className="top-header">
         Users - General details
       </h1>
       <UsersGenDetails />
