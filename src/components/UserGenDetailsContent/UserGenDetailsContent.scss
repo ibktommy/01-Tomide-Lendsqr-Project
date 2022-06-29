@@ -4,8 +4,6 @@ main {
   width: 75vw;
   min-height: 100%;
   background-color: #e5e5e5;
-  padding-top: 3rem;
-  border: .1rem solid #000;
   padding-top: 2rem;
   padding-left: 10vw;
 
@@ -14,7 +12,6 @@ main {
     padding-bottom: 2rem;
 
     .link {
-      border: .1rem solid #000;
       width: 20rem;
       display: flex;
       align-items: center;
@@ -65,4 +62,118 @@ main {
       }
     }
   }
+
+  .client-summary {
+    background: #fff;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 1rem 1rem 0 1rem;
+
+    &_info {
+      justify-content: flex-start;
+      gap: 10rem;
+      align-items: center;
+
+      & > * {
+        padding-right: 2rem;
+      }
+
+      &_profile {
+        gap: 1rem;
+        align-items: center;
+
+        .client-img {
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
+          background: #b9bec9;
+        }
+
+        .text {
+          &-name {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #213f7d;
+          }
+
+          &-code {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #545f7d;
+          }
+        }
+     }
+
+      &_level {
+        gap: 1rem;
+        padding: 2.4rem 2rem 2.4rem 0;
+
+        p {
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: #545f7d;
+        }
+
+        span {
+          i {
+            font-size: 2rem;
+            color: #E9B200;
+          }
+        }
+      }
+
+      &_account {
+        gap: .5rem;
+
+        h4 {
+          font-size: 2.4rem;
+          font-weight: 600;
+          color: #213f7d;
+          letter-spacing: .1rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          font-weight: 400;
+          color: #213f7d;
+        }
+      }
+    }
+
+    &_details {
+      list-style: none;
+      margin-top: 4rem;
+
+      &-header {
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.8);
+        letter-spacing: .1rem;
+
+        &:first-of-type {
+          color: #39cdcc;
+        }
+
+        &.active {
+          border-bottom: 2px solid #39cdcc;
+          // padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    margin-top: 2rem;
+    padding: 2rem 0 1rem 1rem;
+    background: #FFFFFF;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    
+  }
+
+
+  
 }
