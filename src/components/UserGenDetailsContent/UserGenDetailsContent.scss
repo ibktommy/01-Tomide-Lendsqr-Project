@@ -1,6 +1,6 @@
 main {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
   width: 75vw;
   min-height: 100%;
   background-color: #e5e5e5;
@@ -84,8 +84,8 @@ main {
         align-items: center;
 
         .client-img {
-          width: 10rem;
-          height: 10rem;
+          width: 8rem;
+          height: 8rem;
           border-radius: 50%;
           background: #b9bec9;
         }
@@ -107,7 +107,8 @@ main {
 
       &_level {
         gap: 1rem;
-        padding: 2.4rem 2rem 2.4rem 0;
+        padding: 1.4rem;
+        // padding: 2rem 2rem 2rem 0;
 
         p {
           font-size: 1.8rem;
@@ -174,18 +175,133 @@ main {
     
     &_box {
       gap: 1.5rem;
-      padding-bottom: 1rem;
+      padding-bottom: 3rem;
       border-bottom: 1px solid rgba(33, 63, 125, .1);
+      margin-bottom: 3rem;
+
+      &:nth-of-type(3) {
+        .contain {
+          justify-content: flex-start;
+          gap: 5rem;
+        }
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
 
       .contain {
         // flex-wrap: wrap;
         align-items: flex-start;
+        // gap: .5rem;
 
         .main-content_box-details {
-          gap: 1.5rem;
+          // width: 20%;
+          gap: 2rem;
+          // border: 1px solid #000;
         }
       }
     }
   }
   
+}
+
+@media (max-width: 1150px) {
+  html {
+    font-size: 55%;
+  }
+
+  main {
+    .client-summary {
+      &_info {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+
+        & > * {
+          width: 100%;
+          border-bottom: 1px solid rgba(33, 63, 125, .2);
+          padding-bottom: 1rem;
+        }
+
+        &_profile.right-dash,
+        &_level.right-dash {
+          border-right: 0;
+        }
+
+        &_profile {
+          justify-content: flex-start;
+
+          .client-img {
+            width: 6rem;
+            height: 6rem;
+          }
+        }
+
+        &_level {
+          padding-left: 0;
+        }
+      }
+
+      &_details {
+        &-header {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .main-content {
+      &_box {
+        flex-direction: column;
+
+        h2.heading-bold {
+          font-size: 2rem;
+        }
+
+        .contain {
+          flex-direction: column;
+          gap: 2rem;
+
+          .main-content_box-details {
+            width: 100%;
+            border-bottom: 1px dashed rgba(33, 63, 125, .5);
+            padding-bottom: .5rem;
+
+            &:last-of-type {
+              border-bottom: none;
+            }
+            .table {
+              & h3.heading-light {
+                font-size: 1.4rem;
+              }
+
+              & p.para {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  main {
+    .top {
+      .top-options {
+        & h2.title-heading {
+          font-size: 1.8rem;
+        }
+
+        & .button {
+          button {
+            width: 12rem;
+            font-size: 1.2rem;
+            border-radius: .4rem;
+          }
+        }
+      }
+    }
+  }
 }
