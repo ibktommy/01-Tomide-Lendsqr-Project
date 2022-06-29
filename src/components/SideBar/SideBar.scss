@@ -1,8 +1,28 @@
 .sidebar {
-  width: 20vw;
-  background: #FFFFFF;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
-  padding: 3rem 1rem 1rem 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 10rem;
+  background: #e5e5e5;
+  z-index: 8;
+
+  &-menu-item {
+    position: relative;
+    width: 15vw;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    padding: 3rem 1rem 1rem 3rem;
+
+    & .hidden {
+      display: none;
+    }
+
+    &_bar {
+      display: none;
+    }
+  }
 
   &-content {
     gap: 2rem;
@@ -54,3 +74,117 @@
     }
   }
 }
+
+// Responsive Design 
+@media (max-width: 1600px) {
+  .sidebar {
+    &-menu-item {
+      width: 20vw;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .sidebar {
+    &-menu-item {
+      &.menu {
+        width: 10rem;
+      }
+      .sidebar-content {
+        display: none;
+
+        &.menu {
+          display: flex;
+        }
+      }
+
+      &_bar {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        height: 3rem;
+        margin-bottom: 1rem;
+
+        & i{
+        font-size: 3rem;
+        color: #213f7d;
+
+          &.fa-times {
+            display: none;
+
+            &.menu {
+              display: block;
+              position: absolute;
+              top: 50%;
+              right: 0;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          &.fa-bars {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &.menu {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .sidebar {
+    &-menu-item {
+      width: 22vw;
+
+      .sidebar-content {
+        &_top-options {
+          .sidebar-options .sidebar-options-title {
+            font-size: 1.4rem;
+          }
+        }
+
+        &_other-options {
+          &_box {
+            .other-options-list li h4 {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .sidebar {
+    &-menu-item {
+      width: 30vw;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    &-menu-item {
+      width: 40vw;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .sidebar {
+    padding-top: 16rem;
+
+    &-menu-item {
+      width: 50vw;
+    }
+  }
+}
+
