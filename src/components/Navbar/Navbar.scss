@@ -3,8 +3,8 @@
   align-items: center;
   width: 100vw;
   height: 10vh;
-  // top: 0;
-  // left: 0;
+  top: 0;
+  left: 0;
   background: #fff;
   box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
   padding: 0 3rem;
@@ -21,7 +21,7 @@
   .search-bar {
     width: 40rem;
     height: 4rem;
-    border: 1px solid #213F7D;
+    border: 1px solid #39cdcc;
     border-radius: 8px;
 
     input {
