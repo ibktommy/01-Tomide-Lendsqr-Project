@@ -35,6 +35,23 @@
 
       &_box {
         gap: 1rem;
+
+        &:last-of-type {
+          padding-bottom: 1rem;
+          border-bottom: .1rem solid rgba(33, 63, 125, .3);
+        }
+      }
+
+      .navbar-btn {
+        background: transparent;
+        border: 0;
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        color: #213f7d;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
       }
 
       .other-options-title {
@@ -72,6 +89,10 @@
       text-transform: capitalize;
     }
   }
+
+  .sign-out-img {
+    width: 2.1rem;
+  }
 }
 
 // Responsive Design 
@@ -89,8 +110,12 @@
 
     &-menu-item {
       &.menu {
-        width: 10rem;
+        width: 8rem;
+        height: 8rem;
+        padding-top: 4rem;
+        padding-left: 0.5rem;
       }
+
       .sidebar-content {
         display: none;
 
@@ -171,6 +196,10 @@
 
     &-menu-item {
       width: 60vw;
+
+      &.menu {
+        padding-top: 3rem;
+      }
     }
   }
 }

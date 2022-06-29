@@ -21,6 +21,7 @@ import ChartBarIcon from "../../images/sidebar-icons/png/chart-bar 2.png";
 import SliderIcon from "../../images/sidebar-icons/png/sliders-h 1.png";
 import BadgeIcon from "../../images/sidebar-icons/png/badge-percent 1.png";
 import ClipBoardIcon from "../../images/sidebar-icons/png/clipboard-list 1.png";
+import SignOutIcon from "../../images/sidebar-icons/png/sign-out 1.png";
 
 const SideBar = () => {
 	// State for Menu Button
@@ -43,9 +44,9 @@ const SideBar = () => {
 
 					<div
 						className={
-							!menuBtn
-								? "sidebar-content menu col-flex"
-								: "sidebar-content col-flex"
+							menuBtn
+								? "sidebar-content col-flex"
+								: "sidebar-content col-flex menu"
 						}
 					>
 						<div className="sidebar-content_top-options col-flex">
@@ -158,6 +159,30 @@ const SideBar = () => {
 									</li>
 								</ul>
 							</div>
+							<div className="sidebar-content_other-options_box col-flex">
+								<img
+									src={SignOutIcon}
+									alt="SignOutIcon"
+									className="sign-out-img"
+								/>
+								{/* <h3 className="other-options-title">Settings</h3>
+								<ul className="other-options-list col-flex">
+									<li className="sidebar-options">
+										<img src={SliderIcon} alt="SliderIcon" />
+										<h4 className="sidebar-options-title">organization</h4>
+									</li>
+									<li className="sidebar-options">
+										<img src={BadgeIcon} alt="BadgeIcon" />
+										<h4 className="sidebar-options-title">loan products</h4>
+									</li>
+									<li className="sidebar-options">
+										<img src={ClipBoardIcon} alt="ClipBoardIcon" />
+										<h4 className="sidebar-options-title">savings products</h4>
+									</li>
+								</ul> */}
+							</div>
+
+							<button className="navbar-btn">Logout</button>
 						</div>
 					</div>
 				</div>
