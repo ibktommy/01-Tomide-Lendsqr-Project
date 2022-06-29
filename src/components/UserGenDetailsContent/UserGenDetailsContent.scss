@@ -152,6 +152,7 @@ main {
         font-weight: 400;
         color: rgba(0, 0, 0, 0.8);
         letter-spacing: .1rem;
+        cursor: pointer;
 
         &:first-of-type {
           color: #39cdcc;
@@ -300,6 +301,55 @@ main {
             font-size: 1.2rem;
             border-radius: .4rem;
           }
+        }
+      }
+    }
+    .client-summary {
+      &_details {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding-bottom: 2rem;
+
+        &-header {
+          font-size: 1.8rem;
+        }
+
+        &-header.active {
+          padding-bottom: .5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    width: 90vw;
+
+    .top {
+      .link {
+        width: 100%;
+        justify-content: flex-end;
+
+        i {
+          font-size: 2rem;
+        }
+
+        span {
+          font-size: 1.8rem;
+          font-weight: 500;
+        }
+      }
+      .top-options {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        & h2.title-heading {
+          font-size: 3rem;
         }
       }
     }
