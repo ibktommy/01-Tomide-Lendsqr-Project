@@ -11,10 +11,12 @@ function App() {
         Users - General details
       </h1>
       <UsersGenDetails />
-      <h1 className="top-header">
-        Users - Showing Filters
-      </h1>
+      <h1>User - Dashboard</h1>
       <UserFilter />
+      {/* <h1 className="top-header">
+       Users - Showing Filters
+      </h1> 
+      <UserFilter /> */}
     </>
   );
 }
