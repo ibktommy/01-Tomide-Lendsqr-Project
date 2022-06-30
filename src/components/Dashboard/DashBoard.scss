@@ -1,4 +1,5 @@
 .dashboard-content {
+  position: relative;
   background: #FFFFFF;
   border: 1px solid rgba(33, 63, 125, 0.06);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
@@ -31,6 +32,10 @@
   .dashboard-userData {
     margin-top: 1rem;
   }
+
+  // & .hidden {
+  //   display: none;
+  // }
 }
 
 .dashboard-footer {

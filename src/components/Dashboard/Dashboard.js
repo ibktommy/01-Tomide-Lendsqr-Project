@@ -49,6 +49,55 @@ const Dashboard = () => {
   return (
     <>
       <div className="dashboard-content">
+        {/* HEADER MODAL */}
+        <div className="header-modal hidden">
+          <form className='header-modal_form'>
+            <div className="header-modal_form-div">
+              <h2>Organization</h2>
+              <button>
+                <span>Select</span>
+                <i className="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div className="header-modal_form-div">
+              <h2>Username</h2>
+              <button>
+                <span>Select</span>
+                <i className="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div className="header-modal_form-div">
+              <h2>Organization</h2>
+              <button>
+                <span>Select</span>
+                <i className="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div className="header-modal_form-div">
+              <h2>Organization</h2>
+              <button>
+                <span>Select</span>
+                <i className="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div className="header-modal_form-div">
+              <h2>Organization</h2>
+              <button>
+                <span>Select</span>
+                <i className="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <div className="header-modal_form-div">
+              <h2>Organization</h2>
+              <button>
+                <span>Select</span>
+                <i className="fas fa-chevron-down"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        {/* END OF MODAL */}
+
         <div className="dashboard-top">
           <header>
             <div className="header-box">

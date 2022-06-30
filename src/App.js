@@ -5,6 +5,14 @@ import UserFilter from './pages/UserFilter/UserFilter';
 import UsersGenDetails from './pages/UsersGenDetails/UsersGenDetails';
 
 function App() {
+  // Prevent Form Submit 
+  const preventSubmit = () => {
+    window.addEventListener('submit', function (e) {
+      e.preventDefault()
+    })
+  }
+
+  preventSubmit()
   return (
     <>
       <Login />
