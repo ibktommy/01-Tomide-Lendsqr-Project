@@ -8,7 +8,7 @@
 
   .header-modal {
     position: absolute;
-    top: 4rem;
+    top: 5rem;
     left: 2rem;
     width: 25rem;
     height: 90%;
@@ -85,9 +85,9 @@
     margin-top: 1rem;
   }
 
-  // & .hidden {
-  //   display: none;
-  // }
+  & .hidden {
+    display: none;
+  }
 }
 
 .dashboard-footer {

@@ -11,6 +11,7 @@ const Dashboard = () => {
   // Setting States
   const [page, setPage] = useState(0)
   const [users, setUsers] = useState([])
+  const [modal, setModal] = useState(false)
 
   useEffect(() => {
     if (loading) return
@@ -45,12 +46,17 @@ const Dashboard = () => {
     })
   }
 
+  // Toggle Modal
+  function toggleModal() {
+    setModal(!modal)
+  }
+
 
   return (
     <>
       <div className="dashboard-content">
         {/* HEADER MODAL */}
-        <div className="header-modal hidden">
+        <div className={modal ? "header-modal" : "header-modal hidden"}>
           <form className='header-modal_form col-flex'>
             <div className="header-modal_form-div">
               <h2>Organization</h2>
@@ -104,7 +110,7 @@ const Dashboard = () => {
           <header>
             <div className="header-box">
               <h2>Organization</h2>
-              <img src={FilterIcon} alt="FilterIcon" />
+              <img src={FilterIcon} alt="FilterIcon" onClick={toggleModal} />
             </div>
             <div className="header-box">
               <h2>Username</h2>
