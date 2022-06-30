@@ -1,5 +1,5 @@
 import React from 'react'
-import './Card.css'
+import './Card.scss'
 import FilterMenuIcon from '../../images/body-icons/png/filterMenuIcon.png'
 
 const Card = ({ organization, name, email, phoneNumber, status, data }) => {
