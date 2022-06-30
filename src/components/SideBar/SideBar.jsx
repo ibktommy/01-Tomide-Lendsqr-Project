@@ -35,18 +35,18 @@ const SideBar = () => {
 		<>
 			<div className="sidebar">
 				<div
-					className={menuBtn ? "sidebar-menu-item menu" : "sidebar-menu-item"}
+					className={menuBtn ? "sidebar-menu-item" : "sidebar-menu-item menu"}
 				>
 					<div className="sidebar-menu-item_bar" onClick={toggle}>
-						<i className={menuBtn ? "fas fa-bars" : "fas fa-bars menu"}></i>
-						<i className={menuBtn ? "fas fa-times" : "fas fa-times menu"}></i>
+						<i className={menuBtn ? "fas fa-bars menu" : "fas fa-bars "}></i>
+						<i className={menuBtn ? "fas fa-times menu" : "fas fa-times"}></i>
 					</div>
 
 					<div
 						className={
 							menuBtn
-								? "sidebar-content col-flex"
-								: "sidebar-content col-flex menu"
+								? "sidebar-content col-flex menu"
+								: "sidebar-content col-flex "
 						}
 					>
 						<div className="sidebar-content_top-options col-flex">
