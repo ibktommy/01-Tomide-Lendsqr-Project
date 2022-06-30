@@ -51,7 +51,7 @@ const Dashboard = () => {
       <div className="dashboard-content">
         {/* HEADER MODAL */}
         <div className="header-modal hidden">
-          <form className='header-modal_form'>
+          <form className='header-modal_form col-flex'>
             <div className="header-modal_form-div">
               <h2>Organization</h2>
               <button>
