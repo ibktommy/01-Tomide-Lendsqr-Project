@@ -85,38 +85,39 @@ const Dashboard = () => {
             })
           }
         </div>
+      </div>
 
-        <div className="dashboard-footer">
-          <div className="dashboard-footer_showFilter">
-            <p>Showing</p>
-            <button>
-              <span>{page + 1}</span>
-              <i className="fas fa-chevron-down"></i>
-            </button>
-            <p>out of {data.length}</p>
-          </div>
+      <div className="dashboard-footer row-flex">
+        <div className="dashboard-footer_show-filter row-flex">
+          <p>Showing</p>
+          <button className='row-flex'>
+            <span>{page + 1}</span>
+            <i className="fas fa-chevron-down"></i>
+          </button>
+          <p>out of {data.length}</p>
+        </div>
 
-          <div className="dashboard-footer_pagination">
-            {!loading &&
-              <div className='paginate-body'>
-                <button className="nextPage" onClick={prevPage}>
-                  <i className="fas fa-chevron-left"></i>
-                </button>
-                {
-                  data.map((item, index) => {
-                    return (
-                      <button key={index}
-                        className={`page-btn ${index === page ? 'active-btn' : null}`} onClick={() => handlePageBtn(index)}>
-                        {index + 1}
-                      </button>
-                    )
-                  })
-                }
-                <button className="prevPage" onClick={nextPage}>
-                  <i className="fas fa-chevron-right"></i>
-                </button>
-              </div>}
-          </div>
+        <div className="dashboard-footer_pagination row-flex">
+          <button className="nextPage" onClick={prevPage}>
+            <i className="fas fa-chevron-left"></i>
+          </button>
+          {!loading &&
+            <div className='paginate-body'>
+
+              {
+                data.map((item, index) => {
+                  return (
+                    <button key={index}
+                      className={`page-btn ${index === page ? 'active-btn' : null}`} onClick={() => handlePageBtn(index)}>
+                      {index + 1}
+                    </button>
+                  )
+                })
+              }        
+            </div>}
+          <button className="prevPage" onClick={nextPage}>
+            <i className="fas fa-chevron-right"></i>
+          </button>
         </div>
       </div>
     </>

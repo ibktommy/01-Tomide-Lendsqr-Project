@@ -26,10 +26,66 @@
       }
     }
   }
+
+  .dashboard-userData {
+    margin-top: 1rem;
+  }
 }
 
-.dashboard-userData {
-  margin-top: 1rem;
+.dashboard-footer {
+    padding: 2rem;
+    align-items: center;
+
+    &_show-filter {
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #545f7d;
+      }
+
+      button {
+        width: 8rem;
+        height: 3rem;
+        background: rgba(33, 63, 125, 0.1);
+        border-radius: 4px;
+        align-items: center;
+        justify-content: space-around;
+        border: none;
+
+        span {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: #213f7d;
+        }
+      }
+    }
+
+    &_pagination {
+      gap: .5rem;
+      align-items: center;
+
+      button {
+        width: 2.4rem;
+        height: 2.4rem;
+        background: rgba(33, 63, 125, 0.1);
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .paginate-body {
+        .page-btn {
+          background: none;
+          color:#545f7d;
+          font-size: 1.6rem;
+          font-weight: 400;
+          margin-right: .2rem;
+        }
+      }
+    }
 }
 
 // Responsive Design
