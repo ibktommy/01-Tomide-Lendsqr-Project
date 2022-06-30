@@ -25,5 +25,7 @@ export const useFetch = () => {
     fetchData()
   }, [])
 
+  // console.log(data)
+
   return { loading, data }
 }

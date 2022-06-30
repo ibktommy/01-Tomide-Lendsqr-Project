@@ -1,0 +1,47 @@
+.dashboard-content {
+  background: #FFFFFF;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 1.5rem 1rem 1.5rem 2rem;
+
+  .dashboard-top {
+    width: 100%;
+
+    header {
+      display: flex;
+
+      .header-box {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+        width: calc(100% / 6);
+
+        h2 {
+          font-size: 1.2rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #545f7d;
+        }
+      }
+    }
+  }
+}
+
+.dashboard-userData {
+  margin-top: 1rem;
+}
+
+@media (max-width: 1065px) {
+  .dashboard-content {
+    .dashboard-top {
+      header {
+        .header-box {
+          h2 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,14 @@
 import React from 'react'
+import Navbar from "../../components/Navbar/Navbar";
+import SideBar from "../../components/SideBar/SideBar";
+import UserMetrics from "../../components/UserMetrics/UserMetrics.jsx";
+import usersMetric from "../../components/UserMetrics/userMetrics.js";
+import Dashboard from "../../components/Dashboard/Dashboard";
 
 const UserDashboard = () => {
-  return (
-    <>
-      <div className="section section-details" id="user-filter">
+	return (
+		<>
+			<div className="section section-details" id="user-dashboard">
 				<Navbar />
 				<SideBar />
 
@@ -11,13 +16,18 @@ const UserDashboard = () => {
 					<div className="top">
 						<h2 className="title-heading">Users</h2>
 					</div>
-				</main>
 
-        <div className="content">
-          
-        </div>
-    </>
-  )
-}
+					<div className="users-metric row-flex">
+						{usersMetric.map(({ id, ...props }) => {
+							return <UserMetrics key={id} {...props} />;
+						})}
+					</div>
+
+					<Dashboard />
+				</main>
+			</div>
+		</>
+	);
+};
 
 export default UserDashboard

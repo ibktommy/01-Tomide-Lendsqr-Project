@@ -8,7 +8,7 @@ const UserGenDetailsContent = () => {
 			<main>
 				<div className="top col-flex">
 					<div className="link">
-						<i class="fa-solid fa-left-long"></i>
+						<i className="fa-solid fa-left-long"></i>
 						<span>Back to Users</span>
 					</div>
 
@@ -37,9 +37,9 @@ const UserGenDetailsContent = () => {
 						<div className="client-summary_info_level right-dash col-flex">
 							<p>User's Tier</p>
 							<span className="level-rate">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-								<i class="fa-regular fa-star"></i>
+								<i className="fa-solid fa-star"></i>
+								<i className="fa-regular fa-star"></i>
+								<i className="fa-regular fa-star"></i>
 							</span>
 						</div>
 
