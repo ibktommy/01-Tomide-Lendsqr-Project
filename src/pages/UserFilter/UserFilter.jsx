@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import SideBar from "../../components/SideBar/SideBar";
 import UserMetrics from "../../components/UserMetrics/UserMetrics.jsx";
 import usersMetric from "../../components/UserMetrics/userMetrics.js";
+import Dashboard from "../../components/Dashboard/Dashboard";
 
 const UserFilter = () => {
 	return (
@@ -22,6 +23,8 @@ const UserFilter = () => {
 							return <UserMetrics key={id} {...props} />;
 						})}
 					</div>
+
+					<Dashboard />
 				</main>
 			</div>
 		</>

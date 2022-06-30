@@ -21,6 +21,16 @@
   margin: 2rem 0;
 }
 
+.section main {
+  position: relative;
+  margin: 0 auto 3rem auto;
+  width: 75vw;
+  min-height: 100%;
+  background-color: #e5e5e5;
+  padding-top: 2rem;
+  padding-left: 10vw;
+}
+
 .top-header {
   text-transform: uppercase;
   text-align: center;
@@ -69,4 +79,19 @@
   display: flex;
   flex-direction: column;
   gap: .7rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+  .section main {
+    width: 78vw;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .section main {
+    width: 95vw;
+    padding-top: 10rem;
+  }
 }

@@ -1,13 +1,11 @@
 main {
-  position: relative;
-  margin: 0 auto 3rem auto;
-  width: 75vw;
-  min-height: 100%;
-  background-color: #e5e5e5;
-  padding-top: 2rem;
-  padding-left: 10vw;
-
   .users-metric {
     gap: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .users-metric {
+    flex-direction: column;
   }
 }

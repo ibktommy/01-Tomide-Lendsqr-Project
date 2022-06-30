@@ -1,4 +1,5 @@
 import React from 'react'
+import "./UserDashboard.scss";
 import Navbar from "../../components/Navbar/Navbar";
 import SideBar from "../../components/SideBar/SideBar";
 import UserMetrics from "../../components/UserMetrics/UserMetrics.jsx";

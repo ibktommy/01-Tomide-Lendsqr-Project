@@ -16,6 +16,7 @@
         align-items: center;
         gap: .8rem;
         width: calc(100% / 6);
+        cursor: pointer;
 
         h2 {
           font-size: 1.2rem;
@@ -101,5 +102,47 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 990px) {
+  .dashboard-content {
+    .dashboard-top {
+      header {
+        .header-box {
+          flex-direction: column;
+          justify-content: center;
+          
+          h2 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .dashboard-content {
+    .dashboard-top {
+      header {
+        gap: .1rem;
+
+        .header-box {
+          align-items: flex-start;
+
+          &:nth-of-type(4) {
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .dashboard-footer {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
