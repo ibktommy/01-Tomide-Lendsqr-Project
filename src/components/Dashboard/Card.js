@@ -1,5 +1,6 @@
 import React from 'react'
 import './Card.css'
+import FilterMenuIcon from '../../images/body-icons/png/filterMenuIcon.png'
 
 const Card = ({ organization, name, email, phoneNumber, status, data }) => {
   return (
@@ -11,7 +12,7 @@ const Card = ({ organization, name, email, phoneNumber, status, data }) => {
         <li>{phoneNumber}</li>
         <li>{status}</li>
         <li>{data}</li>
-        <li>...</li>
+        <li>{FilterMenuIcon}</li>
       </ul>
     </>
   )
