@@ -86,25 +86,38 @@ const Dashboard = () => {
           }
         </div>
 
-        {!loading &&
-          <div className='paginate-body'>
-            <button className="nextPage" onClick={prevPage}>
-              <i className="fas fa-chevron-left"></i>
+        <div className="dashboard-footer">
+          <div className="dashboard-footer_showFilter">
+            <p>Showing</p>
+            <button>
+              <span>{page + 1}</span>
+              <i className="fas fa-chevron-down"></i>
             </button>
-            {
-              data.map((item, index) => {
-                return (
-                  <button key={index}
-                    className={`page-btn ${index === page ? 'active-btn' : null}`} onClick={() => handlePageBtn(index)}>
-                    {index + 1}
-                  </button>
-                )
-              })
-            }
-            <button className="prevPage" onClick={nextPage}>
-              <i className="fas fa-chevron-right"></i>
-            </button>
-          </div>}
+            <p>out of {data.length}</p>
+          </div>
+
+          <div className="dashboard-footer_pagination">
+            {!loading &&
+              <div className='paginate-body'>
+                <button className="nextPage" onClick={prevPage}>
+                  <i className="fas fa-chevron-left"></i>
+                </button>
+                {
+                  data.map((item, index) => {
+                    return (
+                      <button key={index}
+                        className={`page-btn ${index === page ? 'active-btn' : null}`} onClick={() => handlePageBtn(index)}>
+                        {index + 1}
+                      </button>
+                    )
+                  })
+                }
+                <button className="prevPage" onClick={nextPage}>
+                  <i className="fas fa-chevron-right"></i>
+                </button>
+              </div>}
+          </div>
+        </div>
       </div>
     </>
   )
