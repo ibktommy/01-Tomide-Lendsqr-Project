@@ -62,37 +62,39 @@ const Dashboard = () => {
             <div className="header-modal_form-div">
               <h2>Username</h2>
               <button>
-                <span>Select</span>
-                <i className="fas fa-chevron-down"></i>
+                <span>User</span>
               </button>
             </div>
             <div className="header-modal_form-div">
-              <h2>Organization</h2>
+              <h2>Email</h2>
+              <button>
+                <span>Email</span>
+              </button>
+            </div>
+            <div className="header-modal_form-div">
+              <h2>Date</h2>
+              <button>
+                <span>Date</span>
+                <i className="far fa-calendar-alt"></i>
+              </button>
+            </div>
+            <div className="header-modal_form-div">
+              <h2>Phone Number</h2>
+              <button>
+                <span>Phone Number</span>
+              </button>
+            </div>
+            <div className="header-modal_form-div">
+              <h2>Status</h2>
               <button>
                 <span>Select</span>
                 <i className="fas fa-chevron-down"></i>
               </button>
             </div>
-            <div className="header-modal_form-div">
-              <h2>Organization</h2>
-              <button>
-                <span>Select</span>
-                <i className="fas fa-chevron-down"></i>
-              </button>
-            </div>
-            <div className="header-modal_form-div">
-              <h2>Organization</h2>
-              <button>
-                <span>Select</span>
-                <i className="fas fa-chevron-down"></i>
-              </button>
-            </div>
-            <div className="header-modal_form-div">
-              <h2>Organization</h2>
-              <button>
-                <span>Select</span>
-                <i className="fas fa-chevron-down"></i>
-              </button>
+
+            <div className="form-btn">
+              <button>Reset</button>
+              <button>Filter</button>
             </div>
           </form>
         </div>
