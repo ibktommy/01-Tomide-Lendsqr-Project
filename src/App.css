@@ -19,7 +19,7 @@
 .section {
   background: #e5e5e5;
   width: 100vw;
-  min-height: 145vh;
+  min-height: 165vh;
   margin: 2rem 0;
 }
 
@@ -83,13 +83,24 @@
   gap: .7rem;
 }
 
-@media (max-width: 1920px) {
-  .section {
-    min-height: 165vh;
-  }
-}
+
 
 /* Responsive Design */
+@media (max-width: 1600px) {
+  .section {
+    min-height: 160vh;
+  }
+}
+@media (max-width: 1500px) {
+  .section {
+    min-height: 150vh;
+  }
+}
+@media (max-width: 1400px) {
+  .section {
+    min-height: 150vh;
+  }
+}
 @media (max-width: 1000px) {
   .section main {
     width: 78vw;
