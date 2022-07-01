@@ -19,8 +19,9 @@
 .section {
   background: #e5e5e5;
   width: 100vw;
-  min-height: 165vh;
-  margin: 2rem 0;
+  height: 220vh;
+  min-height: 220vh;
+  margin: 5rem 0;
 }
 
 .section main {
@@ -37,6 +38,12 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  margin-top: 2rem;
+  color: #213f7d;
+}
+
+.top-header:nth-of-type(2) {
+  padding-top: 3rem;
 }
 
 .title-heading {
@@ -86,25 +93,24 @@
 
 
 /* Responsive Design */
-@media (max-width: 1600px) {
-  .section {
-    min-height: 160vh;
-  }
-}
-@media (max-width: 1500px) {
-  .section {
-    min-height: 150vh;
-  }
-}
-@media (max-width: 1400px) {
-  .section {
-    min-height: 150vh;
+@media (max-width: 1300px) {
+  .section:first-of-type{
+    height: 180vh;
+    min-height: 180vh;
   }
 }
 @media (max-width: 1000px) {
   .section main {
     width: 78vw;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 885px) {
+  .section:nth-of-type(2), 
+  .section:nth-of-type(3) {
+    height: 120vh;
+    min-height: 120vh;
   }
 }
 
