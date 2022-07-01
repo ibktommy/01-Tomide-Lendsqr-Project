@@ -74,3 +74,12 @@
     }
   }
 }
+
+
+@media (max-width: 500px) {
+  .user-card {
+    & li {
+      font-size: .6rem;
+    }
+  }
+}

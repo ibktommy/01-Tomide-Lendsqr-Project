@@ -208,3 +208,17 @@
     gap: 1.5rem;
   }
 }
+
+@media (max-width: 500px) {
+  .dashboard-content {
+    .dashboard-top {
+      header {
+        .header-box {
+          h2 {
+            font-size: .8rem;
+          }
+        }
+      }
+    }
+  }
+}
