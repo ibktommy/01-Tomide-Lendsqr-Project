@@ -8,7 +8,6 @@ import ActivateUser from '../../images/body-icons/png/check-user.png'
 const Card = ({ organization, name, email, phoneNumber, status, data }) => {
   // Set States
   const [modal, setModal] = useState(false)
-  // const [statuz, setStatuz] = useState('active')
 
   // Check Status
   function checkStatus(status) {
@@ -29,36 +28,41 @@ const Card = ({ organization, name, email, phoneNumber, status, data }) => {
   return (
 
     <>
-      <ul className="user-card">
-        <li>{organization}</li>
-        <li>{name}</li>
-        <li>{email}</li>
-        <li>{phoneNumber}</li>
-        <li>{data}</li>
-        <li
-          className={checkStatus(status)}
-        >
-          {status}
-        </li>
-        <img src={FilterMenuIcon} alt="FilterMenuIcon" className='user-cardIcon' onClick={toggleModal} />
-      </ul>
+      <div className="user-card_content row-flex">
+        <ul className="user-card">
+          <li>{organization}</li>
+          <li>{name}</li>
+          <li>{email}</li>
+          <li>{phoneNumber}</li>
+          <li>{data}</li>
+          <li
+            className={checkStatus(status)}
+          >
+            {status}
+          </li>
+        </ul>
+
+        <div className="user-card_div">
+          <img src={FilterMenuIcon} alt="FilterMenuIcon" className='user-card_icon' onClick={toggleModal} />
+
+          <div className={modal ? "user-card_modal" : "user-card_modal hidden"} >
+            <div className="user-card_modal-div row-flex">
+              <img src={EyeIcon} alt="EyeIcon" />
+              <p>View Details</p>
+            </div>
+            <div className="user-card_modal-div row-flex">
+              <img src={CancelUser} alt="CancelUser" />
+              <p>Blacklist user</p>
+            </div>
+            <div className="user-card_modal-div row-flex">
+              <img src={ActivateUser} alt="ActivateUser" />
+              <p>Activate User</p>
+            </div>
+          </div >
+        </div>
+      </div>
     </>
   )
 }
 
 export default Card
-
-  // < div className = { modal? "user-card_modal": "user-card_modal hidden" } >
-  //       <div className="user-card_modal-div">
-  //         <img src={EyeIcon} alt="EyeIcon" />
-  //         View Details
-  //       </div>
-  //       <div className="user-card_modal-div">
-  //         <img src={CancelUser} alt="CancelUser" />
-  //         Blacklist user
-  //       </div>
-  //       <div className="user-card_modal-div">
-  //         <img src={ActivateUser} alt="ActivateUser" />
-  //         Activate User
-  //       </div>
-  //     </ >

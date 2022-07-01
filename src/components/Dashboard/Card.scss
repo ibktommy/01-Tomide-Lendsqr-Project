@@ -1,3 +1,48 @@
+.user-card_content {
+	align-items: center;
+
+	.user-card_icon {
+		cursor: pointer;
+	}
+
+		& .user-card_div {
+			position: relative;
+
+			.user-card_modal {
+				position: absolute;
+				top: 0;
+				right: 2rem;
+				padding: 2rem;
+				display: flex;
+				flex-direction: column;
+				gap: 1.5rem;
+				background: #FFFFFF;
+				border: 1px solid rgba(84, 95, 125, 0.04);
+				box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+				border-radius: 4px;
+				z-index: 4;
+				width: 20rem;
+
+				&.hidden {
+					display: none;
+				}
+
+				&-div {
+					justify-content: flex-start;
+					align-items: center;
+					gap: 1.2rem;
+
+					p {
+						font-size: 1.4rem;
+						font-weight: 500;
+						color: #545f7d;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+}
+
 .user-card {
 	width: 100%;
 	margin: 0 auto;
