@@ -100,10 +100,12 @@
     min-height: 210vh;
   }
 }
-@media (max-width: 1000px) {
-  .section main {
-    width: 78vw;
-    padding-left: 0;
+
+
+@media (max-width: 1200px) {
+  .section:first-of-type {
+    height: max-content;
+    min-height: max-content;
   }
 }
 
