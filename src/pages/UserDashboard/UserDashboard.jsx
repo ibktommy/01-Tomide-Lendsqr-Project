@@ -1,5 +1,4 @@
-import React from 'react'
-import "./UserDashboard.scss";
+import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import SideBar from "../../components/SideBar/SideBar";
 import UserMetrics from "../../components/UserMetrics/UserMetrics.jsx";
@@ -31,4 +30,4 @@ const UserDashboard = () => {
 	);
 };
 
-export default UserDashboard
+export default UserDashboard;
