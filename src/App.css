@@ -42,7 +42,8 @@
   color: #213f7d;
 }
 
-.top-header:nth-of-type(2) {
+.top-header:nth-of-type(2),
+.top-header:nth-of-type(3) {
   padding-top: 3rem;
 }
 
@@ -95,8 +96,8 @@
 /* Responsive Design */
 @media (max-width: 1300px) {
   .section:first-of-type{
-    height: 180vh;
-    min-height: 180vh;
+    height: 210vh;
+    min-height: 210vh;
   }
 }
 @media (max-width: 1000px) {
