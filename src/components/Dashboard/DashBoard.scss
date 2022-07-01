@@ -55,6 +55,26 @@
           }
         }
       }
+
+      .form-btn {
+        button {
+          width: 9.8rem;
+          height: 4rem;
+          border: 1px solid #545F7D;
+          border-radius: 8px;
+          text-transform: capitalize;
+          cursor: pointer;
+          background: transparent;
+          color: #545f7d;
+          font-weight: 600;
+
+          &:last-of-type {
+            background: #39cdcc;
+            color: #fff;
+            border: none;
+          }
+        }
+      }
     }
   }
 

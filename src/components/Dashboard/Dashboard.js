@@ -98,7 +98,7 @@ const Dashboard = () => {
               </button>
             </div>
 
-            <div className="form-btn">
+            <div className="form-btn row-flex">
               <button>Reset</button>
               <button>Filter</button>
             </div>
