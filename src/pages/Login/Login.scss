@@ -72,6 +72,7 @@
 				border: 2px solid rgba(84, 95, 125, 0.15);
 				border-radius: 5px;
 				background: #ffffff;
+				padding-left: .5rem;
 
 				&::placeholder {
 					font-size: 1.4rem;
@@ -102,10 +103,18 @@
 				background: #39cdcc;
 				border-radius: 0.8rem;
 				color: #fff;
-				font-size: 1.4rem;
+				font-size: 1.8rem;
+				text-align: center;
+				letter-spacing: .1rem;
 				font-weight: 600;
 				text-transform: uppercase;
 				cursor: pointer;
+
+				&:hover,
+				&:focus {
+					background: #545f7d;
+					transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+				}
 			}
 		}
 	}

@@ -28,22 +28,3 @@ function App() {
 }
 
 export default App;
-
-// {/* <>
-//   <Login />
-
-//   <h1 className="top-header">
-//     Users - General details
-//   </h1>
-//   <UsersGenDetails />
-
-//   <h1 className='top-header'>
-//     User - Dashboard
-//   </h1>
-//   <UserDashboard />
-
-//   <h1 className="top-header">
-//     Users - Showing Filters
-//   </h1>
-//   <UserFilter />
-// </> */}
