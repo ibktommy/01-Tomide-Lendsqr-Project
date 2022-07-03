@@ -81,7 +81,7 @@
   }
 
   .dashboard-top {
-    min-width: 150vw;
+    min-width: 100%;
 
     header {
       width: 100%;
@@ -109,7 +109,7 @@
 
   .dashboard-userData {
     margin-top: 1rem;
-    min-width: 150vw;
+    min-width: 100%;
     overflow-x: scroll;
   }
 
@@ -180,6 +180,65 @@
 }
 
 // Responsive Design
+@media (max-width: 1700px) {
+  .dashboard-content {
+    .dashboard-top {
+      min-width: 70vw;
+    }
+
+    .dashboard-userData {
+      min-width: 70vw;
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .dashboard-content {
+    .dashboard-top {
+      min-width: 90vw;
+    }
+
+    .dashboard-userData {
+      min-width: 90vw;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .dashboard-content {
+    .dashboard-top {
+      min-width: 120vw;
+    }
+
+    .dashboard-userData {
+      min-width: 120vw;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .dashboard-content {
+    .dashboard-top {
+      min-width: 130vw;
+    }
+
+    .dashboard-userData {
+      min-width: 130vw;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .dashboard-content {
+    .dashboard-top {
+      min-width: 150vw;
+    }
+
+    .dashboard-userData {
+      min-width: 150vw;
+    }
+  }
+}
 
 @media (max-width: 650px) {
   .dashboard-content {
@@ -189,19 +248,6 @@
 
     .dashboard-userData {
       min-width: 200vw;
-    }
-  }
-}
-
-
-@media (max-width: 500px) {
-  .dashboard-content {
-    .dashboard-top {
-      min-width: 245vw;
-    }
-
-    .dashboard-userData {
-      min-width: 245vw;
     }
   }
 }
@@ -226,3 +272,17 @@
     }
   }
 }
+
+
+@media (max-width: 500px) {
+  .dashboard-content {
+    .dashboard-top {
+      min-width: 255vw;
+    }
+
+    .dashboard-userData {
+      min-width: 255vw;
+    }
+  }
+}
+
