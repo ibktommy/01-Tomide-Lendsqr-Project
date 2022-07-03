@@ -65,7 +65,7 @@ const SideBar = () => {
 							<div className="sidebar-content_other-options_box col-flex">
 								<h3 className="other-options-title">customers</h3>
 								<ul className="other-options-list col-flex">
-									<li className="sidebar-options">
+									<li className="sidebar-options active">
 										<img src={UserFriendsIcon} alt="user-friends" />
 										<h4 className="sidebar-options-title">Users</h4>
 									</li>
