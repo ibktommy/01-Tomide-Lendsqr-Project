@@ -19,9 +19,8 @@
 .section {
   background: #e5e5e5;
   width: 100vw;
-  height: 220vh;
-  min-height: 220vh;
-  margin: 5rem 0;
+  min-height: 100vh;
+  padding-bottom: 3rem;
 }
 
 .section main {
@@ -94,32 +93,11 @@
 
 
 /* Responsive Design */
-@media (max-width: 1300px) {
-  .section:first-of-type{
-    height: 210vh;
-    min-height: 210vh;
-  }
-}
 
-
-@media (max-width: 1200px) {
-  .section:first-of-type {
-    height: max-content;
-    min-height: max-content;
-  }
-}
-
-@media (max-width: 885px) {
-  .section:nth-of-type(2), 
-  .section:nth-of-type(3) {
-    height: max-content;
-    min-height: max-content;
-  }
-}
-
-@media (max-width: 650px) {
+@media (max-width: 1290px) {
   .section main {
-    width: 95vw;
-    padding-top: 10rem;
+    width: 88%;
+    margin-top: 10rem;
+    padding: 2rem
   }
 }

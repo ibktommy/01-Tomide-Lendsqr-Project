@@ -3,6 +3,8 @@
 	width: 100vw;
 	min-height: 100vh;
 	background: #fff;
+	padding: 2rem 0;
+	overflow: scroll;
 
 	&::before {
 		content: "";
@@ -20,9 +22,9 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		width: 80%;
-		min-height: 90vh;
+		min-height: 98%;
 		margin: 0 auto;
-		padding: 5rem 3rem 0 3rem;
+		padding: 5rem 3rem 3rem 3rem;
 		gap: 2rem;
 
 		header {
@@ -134,7 +136,7 @@
 
 		.container-body {
 			header {
-				margin-bottom: 5rem;
+				margin-bottom: 0rem;
 			}
 
 			.content {
@@ -179,6 +181,7 @@
 	.container {
 		.container-body {
 			header {
+				padding-top: 5rem;
 				width: 100%;
 
 				img {
@@ -211,7 +214,7 @@
 	.container {
 		.container-body {
 			width: 90%;
-			padding: 4rem 1.5rem 1.5rem 1.5rem;
+			padding: 4rem 1.5rem 3rem 1.5rem;
 		}
 	}
 }

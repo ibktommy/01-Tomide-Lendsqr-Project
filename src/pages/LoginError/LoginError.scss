@@ -25,5 +25,36 @@
       line-height: 1.4;
       letter-spacing: .1rem;
     }
+
+    .error-btn {
+      align-self: center;
+      border: none;
+      margin-top: 2rem;
+      width: 18rem;
+      height: 5rem;
+      background: #545f7d;
+      border-radius: 5px;
+
+      &:hover, &:focus {
+        background: transparent;
+        border: .1rem solid #545f7d;
+        transition: all ease .3s;
+
+        & a {
+          color: #545f7d;
+        }
+      }
+
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2rem;
+
+        i {
+          margin-right: .5rem;
+        }
+      }
+    }
   }
 }

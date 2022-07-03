@@ -1,11 +1,15 @@
 main {
   .users-metric {
-    gap: 2rem;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem;
   }
 }
 
-@media (max-width: 900px) {
-  .users-metric {
-    flex-direction: column;
-  }
-}
+// @media (max-width: 900px) {
+//   .users-metric {
+//     flex-direction: column;
+//   }
+// }
