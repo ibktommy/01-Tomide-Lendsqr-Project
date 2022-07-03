@@ -1,0 +1,29 @@
+.error {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #fff;
+  padding: 0 2rem;
+
+  &-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 80%;
+    min-width: 40rem;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    border: .1rem solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, .2);
+    padding: 2rem;
+
+    &-message {
+      font-size: 2rem;
+      text-align: center;
+      color: #545f7d;
+      margin-bottom: 2rem;
+      line-height: 1.4;
+      letter-spacing: .1rem;
+    }
+  }
+}

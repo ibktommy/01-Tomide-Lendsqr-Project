@@ -1,11 +1,18 @@
 import React from "react";
+import "./LoginError.scss";
+import errorImage from "../../images/login/error.jpeg";
 
 const LoginError = () => {
 	return (
 		<>
-			<h1>`Oops! 404 ERROR FOUND :(</h1>
-
-			<h4>YOU NEED TO ENTER LOGIN DETAILS TO PROCEED TO ANOTHER PAGE!</h4>
+			<section className="error">
+				<div className="error-content col-flex">
+					<h4 className="error-content-message">
+						YOU NEED TO ENTER LOGIN DETAILS TO PROCEED TO ANOTHER PAGE!
+					</h4>
+					<img src={errorImage} alt="error" className="error-content-img" />
+				</div>
+			</section>
 		</>
 	);
 };
