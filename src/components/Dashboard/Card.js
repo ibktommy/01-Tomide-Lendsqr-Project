@@ -4,6 +4,7 @@ import FilterMenuIcon from '../../images/body-icons/png/filterMenuIcon.png'
 import EyeIcon from '../../images/body-icons/png/view.png'
 import CancelUser from '../../images/body-icons/png/cancel-user.png'
 import ActivateUser from '../../images/body-icons/png/check-user.png'
+import { Link } from 'react-router-dom'
 
 const Card = ({ organization, name, email, phoneNumber, status, data }) => {
   // Set States
@@ -48,7 +49,11 @@ const Card = ({ organization, name, email, phoneNumber, status, data }) => {
           <div className={modal ? "user-card_modal" : "user-card_modal hidden"} >
             <div className="user-card_modal-div row-flex">
               <img src={EyeIcon} alt="EyeIcon" />
-              <p>View Details</p>
+              <p>
+                <Link to='/users-general-details' className='link'>
+                  View Details
+                </Link>
+              </p>
             </div>
             <div className="user-card_modal-div row-flex">
               <img src={CancelUser} alt="CancelUser" />
