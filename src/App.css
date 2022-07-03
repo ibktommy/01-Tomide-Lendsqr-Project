@@ -19,7 +19,7 @@
 .section {
   background: #e5e5e5;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 165vh;
   padding-bottom: 3rem;
 }
 
@@ -32,7 +32,7 @@
   margin: 0 auto 3rem auto;
   width: 75vw;
   overflow-x: hidden;
-  min-height: 100%;
+  min-height: 100vh;
   background-color: #e5e5e5;
   padding-top: 2rem;
   padding-left: 10vw;

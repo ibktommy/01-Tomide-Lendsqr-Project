@@ -103,16 +103,14 @@
 	}
 }
 
-// @media (max-width: 1700px) {
-// 	.user-card {
-// 		& li {
-// 			text-align: center;
-
-// 			// &:nth-of-type(1) {
-// 			// 	text-align: start;
-// 			// }
-// 		}
-// 	}
-// }
+@media (max-width: 660px) {
+	.user-card {
+		& li {
+			&:nth-of-type(1) {
+				text-align: start;
+			}
+		}
+	}
+}
 
 
