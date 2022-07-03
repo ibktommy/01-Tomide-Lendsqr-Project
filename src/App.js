@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css';
 import Login from './pages/Login/Login';
+import LoginError from './pages/LoginError/LoginError';
 import UserDashboard from './pages/UserDashboard/UserDashboard';
 import UserFilter from './pages/UserFilter/UserFilter';
 import UsersGenDetails from './pages/UsersGenDetails/UsersGenDetails';
@@ -22,6 +24,7 @@ function App() {
         <Route path='users-general-details' element={<UsersGenDetails />} />
         <Route path='users-dashboard' element={<UserDashboard />} />
         <Route path='users-filter' element={<UserFilter />} />
+        <Route path='error' element={<LoginError />} />
       </Routes>
     </BrowserRouter>
   );
