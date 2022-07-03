@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
 import Login from './pages/Login/Login';
 import LoginError from './pages/LoginError/LoginError';
 import UserDashboard from './pages/UserDashboard/UserDashboard';
@@ -24,6 +25,7 @@ function App() {
         <Route path='users-dashboard' element={<UserDashboard />} />
         <Route path='users-filter' element={<UserFilter />} />
         <Route path='error' element={<LoginError />} />
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );
