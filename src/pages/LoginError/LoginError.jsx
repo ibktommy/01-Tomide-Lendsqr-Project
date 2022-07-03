@@ -8,7 +8,7 @@ const LoginError = () => {
 			<section className="error">
 				<div className="error-content col-flex">
 					<h4 className="error-content-message">
-						YOU NEED TO ENTER LOGIN DETAILS TO PROCEED TO ANOTHER PAGE!
+						YOU NEED TO ENTER ADMIN LOGIN DETAILS TO PROCEED TO ANOTHER PAGE!
 					</h4>
 					<img src={errorImage} alt="error" className="error-content-img" />
 				</div>
