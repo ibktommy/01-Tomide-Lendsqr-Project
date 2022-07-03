@@ -92,6 +92,7 @@
       .header-box {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 1rem;
         width: calc(100% / 6);
         cursor: pointer;
