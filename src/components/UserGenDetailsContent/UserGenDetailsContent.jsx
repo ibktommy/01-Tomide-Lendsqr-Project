@@ -1,16 +1,17 @@
 import React from "react";
 import "./UserGenDetailsContent.scss";
 import ClientIcon from "../../images/body-icons/png/client.png";
+import { Link } from "react-router-dom";
 
 const UserGenDetailsContent = () => {
 	return (
 		<>
 			<main>
 				<div className="top col-flex">
-					<div className="link">
+					<Link to="/users-dashboard" className="link">
 						<i className="fa-solid fa-left-long"></i>
 						<span>Back to Users</span>
-					</div>
+					</Link>
 
 					<div className="top-options row-flex">
 						<h2 className="title-heading">User Details</h2>

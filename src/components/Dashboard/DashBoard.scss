@@ -5,6 +5,8 @@
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
   padding: 1.5rem 1rem 1.5rem 2rem;
+  width: 100%;
+  overflow-x: scroll;
 
   .header-modal {
     position: absolute;
@@ -79,20 +81,23 @@
   }
 
   .dashboard-top {
-    width: 100%;
+    min-width: 150vw;
 
     header {
+      width: 100%;
       display: flex;
+      justify-content: space-between;
+      gap: 5rem;
 
       .header-box {
         display: flex;
         align-items: center;
-        gap: .8rem;
+        gap: 1rem;
         width: calc(100% / 6);
         cursor: pointer;
 
         h2 {
-          font-size: 1.2rem;
+          font-size: 1.4rem;
           font-weight: 600;
           text-transform: uppercase;
           color: #545f7d;
@@ -103,6 +108,8 @@
 
   .dashboard-userData {
     margin-top: 1rem;
+    min-width: 150vw;
+    overflow-x: scroll;
   }
 
   & .hidden {
@@ -173,70 +180,46 @@
 
 // Responsive Design
 
-@media (max-width: 1065px) {
-  .dashboard-content {
-    .dashboard-top {
-      header {
-        .header-box {
-          h2 {
-            font-size: 1.1rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 990px) {
-  .dashboard-content {
-    .dashboard-top {
-      header {
-        .header-box {
-          flex-direction: column;
-          justify-content: center;
-          
-          h2 {
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 650px) {
   .dashboard-content {
     .dashboard-top {
-      header {
-        gap: .1rem;
+      min-width: 200vw;
+    }
 
-        .header-box {
-          align-items: flex-start;
-
-          &:nth-of-type(4) {
-            align-items: center;
-          }
-        }
-      }
+    .dashboard-userData {
+      min-width: 200vw;
     }
   }
 }
 
-@media (max-width: 550px) {
-  .dashboard-footer {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
 
 @media (max-width: 500px) {
   .dashboard-content {
     .dashboard-top {
-      header {
-        .header-box {
-          h2 {
-            font-size: .8rem;
-          }
+      min-width: 245vw;
+    }
+
+    .dashboard-userData {
+      min-width: 245vw;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .dashboard-footer {
+    flex-direction: column;
+    gap: 2rem;
+
+    &_pagination {
+      button {
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+
+      .paginate-body {
+        .page-btn,
+        .active-btn {
+          font-size: 1.3rem;
         }
       }
     }

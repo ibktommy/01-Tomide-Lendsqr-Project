@@ -106,6 +106,7 @@
 
 @media (max-width: 1290px) {
   .sidebar {
+    transition: all .5s ease;
     padding-top: 8rem;
 
     &-menu-item {

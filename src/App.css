@@ -23,15 +23,33 @@
   padding-bottom: 3rem;
 }
 
+.section-details {
+  position: relative;
+}
+
 .section main {
   position: relative;
   margin: 0 auto 3rem auto;
   width: 75vw;
+  overflow-x: hidden;
   min-height: 100%;
   background-color: #e5e5e5;
   padding-top: 2rem;
   padding-left: 10vw;
 }
+
+.users-metric {
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
 
 .top-header {
   text-transform: uppercase;
@@ -89,6 +107,8 @@
   flex-direction: column;
   gap: .7rem;
 }
+
+
 
 
 
