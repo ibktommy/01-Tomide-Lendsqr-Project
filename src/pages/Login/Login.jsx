@@ -18,7 +18,6 @@ const Login = () => {
 		if (!name || !password) {
 			navigate("/error");
 		} else {
-			console.log("User");
 			setName({ name: name });
 			setPassword({ password: password });
 			navigate("/users-dashboard");
