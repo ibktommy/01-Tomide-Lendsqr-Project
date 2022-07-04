@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./LoginError.scss";
-import errorImage from "../../images/login/error.jpeg";
+import errorImage from "../../images/login/error-icon.png";
 
 const LoginError = () => {
 	return (

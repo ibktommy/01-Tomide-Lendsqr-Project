@@ -16,6 +16,11 @@
     border: .1rem solid rgba(33, 63, 125, 0.06);
     box-shadow: 3px 5px 20px rgba(0, 0, 0, .2);
     padding: 2rem;
+    align-items: center;
+
+    &-img {
+      width: 25rem;
+    }
 
     &-message {
       font-size: 2rem;
@@ -27,7 +32,6 @@
     }
 
     .error-btn {
-      align-self: center;
       border: none;
       margin-top: 2rem;
       width: 18rem;
